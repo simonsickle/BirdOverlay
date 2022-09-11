@@ -16,8 +16,8 @@ On the market, nothing... But a combo of available products let us do what we wa
 #### What you need
 1. Owlet 3 Smart Sock (good luck buying it in the USA, thanks FDA)
 1. A wyze 3 camera with starlight sensor
-1. docker-wyze-bridge to get RTSP stream of the camera locally
-1. gstreamer and cairo programs
+1. docker-wyze-bridge to get RTSP stream of the camera
+1. OBS to rebroadcast the stream with an overlay
 1. this tool to add the owlet overlay
 
 ## Running this software
