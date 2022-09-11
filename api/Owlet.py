@@ -10,11 +10,12 @@ class Owlet:
     def __init__(self):
         """Initialize API Token."""
         load_dotenv()
+        
         self.__client = requests.session()
         self.__JWT = ""
         self.__MINI_TOKEN = ""
-        self.__OWLET_USER = os.getenv('USER_EMAIL')
-        self.__OWLET_PASS = os.getenv('USER_PASS')
+        self.__OWLET_USER = str(os.getenv('USER_EMAIL'))
+        self.__OWLET_PASS = str(os.getenv('USER_PASS'))
         self.__OWLET_REGION = "world"
         self.__OWLET_TOKEN = None
         self.__OWLET_REGION_CONFIG = {

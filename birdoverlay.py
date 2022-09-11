@@ -71,11 +71,5 @@ PORT = 8000
 my_server = socketserver.TCPServer(("", PORT), handler_object)
 
 # Start the server
+print("Serving at http://127.0.0.1:8000")
 my_server.serve_forever()
-### Run until stopped
-# if __name__ == "__main__":
-#     while True:
-#         run_updates()
-#         if DEBUG:
-#             print("Pausing for 10 seconds until next update")
-#         sleep(10)
